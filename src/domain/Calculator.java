@@ -7,6 +7,7 @@ public class Calculator {
     public int Calculation() {
         int result = 0;
         inputPlace.setOperations();
+        inputPlace.getOperations();
         for (int i = 0; i < numberArea; i++) {  // 1 + 2 - 3 * 2
             for (int j = 1; j < 4; j++){
                 switch (inputPlace.operatorArr[i]) {
