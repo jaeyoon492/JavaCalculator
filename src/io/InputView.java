@@ -1,19 +1,19 @@
-package domain;
+package io;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class InputPlace {
-    private int a;
-    private int b;
+public class InputView {
+    private int a = 1;
+    private int b = 1;
     public String[] Value;
     public int[] numberArr;
     public String[] operatorArr;
     Scanner scanner = new Scanner(System.in);
 
-    public void setOperations() {   // 1 + 2 + 3
+    public void userInput() {   // 1 + 2 + 3
         System.out.print("식을 입력해 주세요.[Ex : 1 + 2] : ");
-        Value = scanner.nextLine().trim().split("\\s");    //1+2+3
+        Value = scanner.nextLine().split("\\s");    //1+2+3
         System.out.println(Arrays.toString(Value));
     }
 
@@ -25,8 +25,6 @@ public class InputPlace {
                 b++;
             }
         }
-        a+=1;
-        b+=1;
     }
 
     public void getOperations() {

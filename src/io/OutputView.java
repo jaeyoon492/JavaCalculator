@@ -1,6 +1,8 @@
-package domain;
+package io;
 
-public class OutputPlace {
+import domain.Calculator;
+
+public class OutputView {
     Calculator calculator = new Calculator();
 
     public void outputView(){

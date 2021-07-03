@@ -1,8 +1,8 @@
-import domain.OutputPlace;
+import io.OutputView;
 
 public class Application {
     public static void main(String[] args) {
-        OutputPlace outputPlace = new OutputPlace();
-        outputPlace.outputView();
+        OutputView outputView = new OutputView();
+        outputView.outputView();
     }
 }
